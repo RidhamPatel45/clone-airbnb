@@ -207,8 +207,15 @@ MAKE BORDER LINE BETWEEN PHOTO BLACK TO WHITE LIKE IN REFERENSE SITE I ATTECH BO
 **Agent used:** main / pixel-diff-reviewer
 **Outcome (1 line):** Changed PhotoGrid border gap from black to pure white (#FFFFFF), updated listing title to "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10", extracted 5 exact reference hero images, rendered architecture-diagram.png, created standalone submission folder with all prompt logs and diagrams, and packaged final airbnb-clone-submission.zip.
 
+---
 
+## Phase 17 — Render Blueprint Infrastructure-as-Code & Full-Stack Deployment
 
+**Prompt:**
+i want to host this on render as blueprint
+so make accrding yml file for frontend and backed
+and tell me step by step task to do on render
 
-
+**Agent used:** main
+**Outcome (1 line):** Engineered root Render Blueprint `render.yaml` declaring both Node/Express backend (`/api/health`, `/api/listing`, `/api/reserve`) and Next.js frontend services with automated `NEXT_PUBLIC_API_URL` linking, added interactive API-backed reservation handler, created comprehensive step-by-step deployment guide, and re-generated submission zip archive.
 

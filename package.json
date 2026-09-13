@@ -7,7 +7,9 @@
     "dev": "npm --prefix airbnb-app run dev",
     "build": "npm --prefix airbnb-app run build",
     "start": "npm --prefix airbnb-app run start",
-    "lint": "npm --prefix airbnb-app run lint"
+    "lint": "npm --prefix airbnb-app run lint",
+    "backend:dev": "npm --prefix backend run dev",
+    "backend:start": "npm --prefix backend run start"
   },
   "keywords": [
     "airbnb-clone",

@@ -1,0 +1,14 @@
+{
+  "name": "airbnb-clone-backend",
+  "version": "1.0.0",
+  "description": "Backend API service for Airbnb Clone listing and reservation management",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
