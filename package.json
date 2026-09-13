@@ -1,0 +1,25 @@
+{
+  "name": "playpower-airbnb-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pixel-accurate Airbnb Listing Page Clone with Photo Tour, Lightbox, and Production Architecture Diagram",
+  "scripts": {
+    "dev": "npm --prefix airbnb-app run dev",
+    "build": "npm --prefix airbnb-app run build",
+    "start": "npm --prefix airbnb-app run start",
+    "lint": "npm --prefix airbnb-app run lint"
+  },
+  "keywords": [
+    "airbnb-clone",
+    "nextjs",
+    "typescript",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0"
+  }
+}

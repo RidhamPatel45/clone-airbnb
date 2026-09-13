@@ -1,0 +1,30 @@
+[
+  {
+    "section": "hero-gallery",
+    "mismatchPercent": 48.67
+  },
+  {
+    "section": "title-host-block",
+    "mismatchPercent": 0
+  },
+  {
+    "section": "amenities",
+    "mismatchPercent": 0
+  },
+  {
+    "section": "calendar-booking",
+    "mismatchPercent": 7.16
+  },
+  {
+    "section": "reviews",
+    "mismatchPercent": 5.93
+  },
+  {
+    "section": "map-location",
+    "mismatchPercent": 0
+  },
+  {
+    "section": "similar-listings",
+    "mismatchPercent": 48.53
+  }
+]

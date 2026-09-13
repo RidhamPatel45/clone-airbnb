@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 960" width="100%" height="100%" style="background-color: #0d1117; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF385C" />
+      <stop offset="100%" stop-color="#BD1E59" />
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#161e2e" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="kafkaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+    </marker>
+    <marker id="arrow-pink" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#FF385C" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b" />
+    </marker>
+  </defs>
+
+  <!-- Title & Header Bar -->
+  <rect x="40" y="30" width="1320" height="70" rx="12" fill="url(#edgeGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)" />
+  <circle cx="75" cy="65" r="18" fill="url(#headerGrad)" />
+  <path d="M75 53 C70 53 65 59 65 67 C65 73 75 80 75 80 C75 80 85 73 85 67 C85 59 80 53 75 53 Z" fill="#ffffff" opacity="0.9" />
+  <text x="110" y="60" fill="#f8fafc" font-size="20" font-weight="700">Production-Scale Architecture: Vacation-Rental Marketplace (Airbnb-Scale)</text>
+  <text x="110" y="82" fill="#94a3b8" font-size="13">High-Availability, Multi-Region Active-Active Topology • 100M+ Listings • P95 &lt; 250ms SLA</text>
+  
+  <!-- Tier 1: Client Tier -->
+  <rect x="40" y="125" width="1320" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="150" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.5">TIER 1: GLOBAL CLIENTS &amp; CHANNELS</text>
+  
+  <!-- Web Client -->
+  <rect x="70" y="160" width="370" height="42" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1" />
+  <text x="85" y="186" fill="#f1f5f9" font-size="13" font-weight="600">🖥️ Desktop Web (Next.js 14 SSR/ISR)</text>
+  
+  <!-- Mobile Apps -->
+  <rect x="475" y="160" width="370" height="42" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1" />
+  <text x="490" y="186" fill="#f1f5f9" font-size="13" font-weight="600">📱 Mobile Apps (iOS Swift / Android Kotlin)</text>
+  
+  <!-- Partner & API Clients -->
+  <rect x="880" y="160" width="450" height="42" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1" />
+  <text x="895" y="186" fill="#f1f5f9" font-size="13" font-weight="600">🔌 Channel Managers &amp; Partner APIs (GraphQL / REST)</text>
+
+  <!-- Connectors Tier 1 -> Tier 2 -->
+  <line x1="700" y1="215" x2="700" y2="245" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Tier 2: Edge & Security Tier -->
+  <rect x="40" y="245" width="1320" height="95" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="270" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.5">TIER 2: EDGE NETWORK, CDN &amp; API GATEWAY</text>
+
+  <!-- Cloudflare / CloudFront Edge -->
+  <rect x="60" y="280" width="390" height="48" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+  <text x="75" y="300" fill="#e0f2fe" font-size="12" font-weight="700">Cloudflare / AWS CloudFront Anycast CDN</text>
+  <text x="75" y="318" fill="#94a3b8" font-size="11">WAF • DDoS Shield • Edge TLS 1.3 • Static Asset / HTML ISR Cache</text>
+
+  <!-- Envoy / Kong Gateway -->
+  <rect x="470" y="280" width="400" height="48" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+  <text x="485" y="300" fill="#e0f2fe" font-size="12" font-weight="700">Envoy / Kong API Gateway &amp; Mesh</text>
+  <text x="485" y="318" fill="#94a3b8" font-size="11">OAuth2/JWT Auth • Token Bucket Rate Limiting • Canary Routing</text>
+
+  <!-- Apollo Router / BFF -->
+  <rect x="890" y="280" width="450" height="48" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+  <text x="905" y="300" fill="#e0f2fe" font-size="12" font-weight="700">Apollo Router (Federated GraphQL Gateway)</text>
+  <text x="905" y="318" fill="#94a3b8" font-size="11">Schema Subgraph Stitching • Client Tailored BFF Payloads</text>
+
+  <!-- Connector Tier 2 -> Tier 3 -->
+  <line x1="700" y1="340" x2="700" y2="370" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Tier 3: Microservices Core Tier -->
+  <rect x="40" y="370" width="1320" height="135" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="395" fill="#818cf8" font-size="12" font-weight="700" letter-spacing="1.5">TIER 3: BUSINESS MICROSERVICES CLUSTER (EKS KUBERNETES)</text>
+
+  <!-- Service 1: Listing & Content -->
+  <rect x="55" y="410" width="240" height="80" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" />
+  <text x="70" y="432" fill="#e0e7ff" font-size="13" font-weight="700">🏡 Listing Service</text>
+  <text x="70" y="450" fill="#cbd5e1" font-size="11">Golang / gRPC</text>
+  <text x="70" y="466" fill="#94a3b8" font-size="10">• Metadata, specs, rules</text>
+  <text x="70" y="480" fill="#94a3b8" font-size="10">• Amenities &amp; localized text</text>
+
+  <!-- Service 2: Search & Discovery -->
+  <rect x="310" y="410" width="240" height="80" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" />
+  <text x="325" y="432" fill="#e0e7ff" font-size="13" font-weight="700">🔍 Search &amp; Geo Service</text>
+  <text x="325" y="450" fill="#cbd5e1" font-size="11">Java / Spring Boot</text>
+  <text x="325" y="466" fill="#94a3b8" font-size="10">• H3 Hex geospatial index</text>
+  <text x="325" y="480" fill="#94a3b8" font-size="10">• Semantic AI embedding search</text>
+
+  <!-- Service 3: Availability & Locks -->
+  <rect x="565" y="410" width="245" height="80" rx="8" fill="#0f172a" stroke="#ec4899" stroke-width="1" />
+  <text x="580" y="432" fill="#fce7f3" font-size="13" font-weight="700">🔒 Availability &amp; Locks</text>
+  <text x="580" y="450" fill="#f472b6" font-size="11">Rust / Tokio</text>
+  <text x="580" y="466" fill="#94a3b8" font-size="10">• Redlock distributed mutex</text>
+  <text x="580" y="480" fill="#94a3b8" font-size="10">• Zero double-booking lease</text>
+
+  <!-- Service 4: Booking & Payments -->
+  <rect x="825" y="410" width="250" height="80" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+  <text x="840" y="432" fill="#d1fae5" font-size="13" font-weight="700">💳 Booking &amp; Payments</text>
+  <text x="840" y="450" fill="#34d399" font-size="11">Go / Temporal Workflows</text>
+  <text x="840" y="466" fill="#94a3b8" font-size="10">• Idempotent checkout saga</text>
+  <text x="840" y="480" fill="#94a3b8" font-size="10">• Multi-currency payment ledger</text>
+
+  <!-- Service 5: Reviews & Trust -->
+  <rect x="1090" y="410" width="255" height="80" rx="8" fill="#0f172a" stroke="#eab308" stroke-width="1" />
+  <text x="1105" y="432" fill="#fef9c3" font-size="13" font-weight="700">⭐ Reviews &amp; Trust</text>
+  <text x="1105" y="450" fill="#facc15" font-size="11">Node.js / TypeScript</text>
+  <text x="1105" y="466" fill="#94a3b8" font-size="10">• Star sub-scores &amp; badges</text>
+  <text x="1105" y="480" fill="#94a3b8" font-size="10">• Verified guest reviews</text>
+
+  <!-- Connector Tier 3 -> Tier 4 -->
+  <line x1="175" y1="490" x2="175" y2="540" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow-blue)" />
+  <line x1="430" y1="490" x2="430" y2="540" stroke="#818cf8" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="685" y1="490" x2="685" y2="540" stroke="#ec4899" stroke-width="2" marker-end="url(#arrow-pink)" />
+  <line x1="950" y1="490" x2="950" y2="540" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="1215" y1="490" x2="1215" y2="540" stroke="#eab308" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Tier 4: Storage, Caching & Data Tier -->
+  <rect x="40" y="540" width="1320" height="135" rx="10" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="565" fill="#10b981" font-size="12" font-weight="700" letter-spacing="1.5">TIER 4: DISTRIBUTED DATA, CACHING &amp; STORAGE TIER</text>
+
+  <!-- DB 1: Aurora Postgres -->
+  <rect x="55" y="580" width="240" height="80" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+  <text x="70" y="602" fill="#ecfdf5" font-size="12" font-weight="700">🐘 Aurora PostgreSQL</text>
+  <text x="70" y="620" fill="#94a3b8" font-size="11">• Partitioned by Region / City</text>
+  <text x="70" y="636" fill="#94a3b8" font-size="11">• Multi-AZ read replicas</text>
+  <text x="70" y="650" fill="#94a3b8" font-size="10">• Debezium CDC connectors</text>
+
+  <!-- Search DB: OpenSearch -->
+  <rect x="310" y="580" width="240" height="80" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+  <text x="325" y="602" fill="#ecfdf5" font-size="12" font-weight="700">🔎 OpenSearch Cluster</text>
+  <text x="325" y="620" fill="#94a3b8" font-size="11">• Geospatial Bounding Box</text>
+  <text x="325" y="636" fill="#94a3b8" font-size="11">• Bitset filter caching</text>
+  <text x="325" y="650" fill="#94a3b8" font-size="10">• Sub-50ms query response</text>
+
+  <!-- Cache DB: Redis Cluster -->
+  <rect x="565" y="580" width="245" height="80" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+  <text x="580" y="602" fill="#ecfdf5" font-size="12" font-weight="700">⚡ Redis 7.0 Cluster</text>
+  <text x="580" y="620" fill="#94a3b8" font-size="11">• 10-min soft inventory lease</text>
+  <text x="580" y="636" fill="#94a3b8" font-size="11">• Session &amp; pricing cache</text>
+  <text x="580" y="650" fill="#94a3b8" font-size="10">• Rate limit sliding windows</text>
+
+  <!-- DB 2: CockroachDB / Financial DB -->
+  <rect x="825" y="580" width="250" height="80" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+  <text x="840" y="602" fill="#ecfdf5" font-size="12" font-weight="700">🏦 CockroachDB Ledger</text>
+  <text x="840" y="620" fill="#94a3b8" font-size="11">• Multi-region strict ACID</text>
+  <text x="840" y="636" fill="#94a3b8" font-size="11">• Two-phase commit ledger</text>
+  <text x="840" y="650" fill="#94a3b8" font-size="10">• Zero data loss (RPO = 0)</text>
+
+  <!-- DB 3: ScyllaDB Reviews -->
+  <rect x="1090" y="580" width="255" height="80" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+  <text x="1105" y="602" fill="#ecfdf5" font-size="12" font-weight="700">📦 ScyllaDB &amp; AWS S3</text>
+  <text x="1105" y="620" fill="#94a3b8" font-size="11">• Reviews time-series store</text>
+  <text x="1105" y="636" fill="#94a3b8" font-size="11">• S3 Bucket: multi-res photos</text>
+  <text x="1105" y="650" fill="#94a3b8" font-size="10">• Lifecycle Glacier archiving</text>
+
+  <!-- Connector Tier 4 -> Event Bus -->
+  <line x1="175" y1="660" x2="175" y2="705" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-orange)" />
+  <line x1="950" y1="660" x2="950" y2="705" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-orange)" />
+
+  <!-- Tier 5: Event Streaming & Async Pipeline -->
+  <rect x="40" y="705" width="1320" height="95" rx="10" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="730" fill="#f59e0b" font-size="12" font-weight="700" letter-spacing="1.5">TIER 5: ASYNC EVENT BUS, PIPELINES &amp; WORKERS</text>
+
+  <!-- Kafka Cluster -->
+  <rect x="60" y="740" width="410" height="48" rx="6" fill="#0f172a" stroke="#d97706" stroke-width="1" />
+  <text x="75" y="760" fill="#fef3c7" font-size="12" font-weight="700">Apache Kafka Distributed Event Stream</text>
+  <text x="75" y="777" fill="#94a3b8" font-size="11">listing-cdc • booking-confirmed • payment-settled • analytics</text>
+
+  <!-- Search Sync Worker -->
+  <rect x="490" y="740" width="280" height="48" rx="6" fill="#0f172a" stroke="#d97706" stroke-width="1" />
+  <text x="505" y="760" fill="#fef3c7" font-size="12" font-weight="700">Search Sync Workers</text>
+  <text x="505" y="777" fill="#94a3b8" font-size="11">Consumes CDC -> updates OpenSearch</text>
+
+  <!-- Media Transcoder Worker -->
+  <rect x="790" y="740" width="270" height="48" rx="6" fill="#0f172a" stroke="#d97706" stroke-width="1" />
+  <text x="805" y="760" fill="#fef3c7" font-size="12" font-weight="700">Media Transcoding Lambda</text>
+  <text x="805" y="777" fill="#94a3b8" font-size="11">WebP/AVIF generation, thumbnail sets</text>
+
+  <!-- Notification & Webhook Worker -->
+  <rect x="1080" y="740" width="265" height="48" rx="6" fill="#0f172a" stroke="#d97706" stroke-width="1" />
+  <text x="1095" y="760" fill="#fef3c7" font-size="12" font-weight="700">Notification Engine</text>
+  <text x="1095" y="777" fill="#94a3b8" font-size="11">Email, SMS, APNs, FCM push notifications</text>
+
+  <!-- Tier 6: DevOps, CI/CD & Observability Footer -->
+  <rect x="40" y="825" width="1320" height="100" rx="10" fill="url(#edgeGrad)" stroke="#475569" stroke-width="1.5" filter="url(#dropShadow)" />
+  <text x="60" y="850" fill="#94a3b8" font-size="12" font-weight="700" letter-spacing="1.5">GLOBAL DEVOPS, INFRASTRUCTURE &amp; OBSERVABILITY</text>
+  
+  <text x="60" y="875" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#38bdf8">Infrastructure as Code:</tspan> Terraform / OpenTofu + AWS EKS Multi-Region Active-Active</text>
+  <text x="60" y="895" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#818cf8">GitOps &amp; Canary CD:</tspan> ArgoCD with automated metric-based rollback (5% -> 25% -> 100%)</text>
+  <text x="60" y="915" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#10b981">Observability &amp; SRE:</tspan> OpenTelemetry distributed tracing + Prometheus &amp; Grafana + P95 SLA monitoring</text>
+
+  <text x="750" y="875" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#ec4899">Double-Booking Guard:</tspan> Redis Redlock (10-min soft hold) + Postgres row-level FOR UPDATE</text>
+  <text x="750" y="895" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#f59e0b">Disaster Recovery:</tspan> Cross-region Aurora replication + Route53 Health Checks (RTO &lt; 2m, RPO &lt; 1m)</text>
+  <text x="750" y="915" fill="#f8fafc" font-size="12">• <tspan font-weight="600" fill="#eab308">Edge Performance:</tspan> Next.js On-Demand ISR, Stale-While-Revalidate, WebP/AVIF responsive images</text>
+</svg>
